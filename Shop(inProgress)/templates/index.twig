@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{tittle}}</title>
+</head>
+
+<body>
+    {{header}}
+    <ul id="navigation">
+        {% for item in navigation %}
+        <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h1>{{tittle}}</h1>
+    
+</body>
+
+</html>
